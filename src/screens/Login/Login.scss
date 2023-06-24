@@ -1,0 +1,55 @@
+.login-screen{
+    overflow-x: hidden;
+
+    .login-container{
+        .row{
+
+            .col-lg-6{
+                h1{
+                    text-align: center;
+                    margin-top: 2rem;
+                    font-size: 2rem;
+                    font-weight: bolder;
+                }
+
+                .welc-desc{
+                    text-align: center;
+                    font-size: 14px;
+                    color: gray;
+                    margin-bottom: 4rem;
+                }
+        
+                .login-form{
+                    display: block;
+                    text-align: center;
+        
+                    form{
+                        display: inline-block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: left;
+        
+                        div{
+                            .input{
+                                margin-bottom: 2rem;
+                                width: 350px;
+                            }
+                        }
+                    }
+
+                    .reg-desc{
+                        margin-top: 3rem;
+                        font-size: 14px;
+                    }
+                }
+
+                .image-container{
+
+                    .login-image{
+                        margin-top: 6rem;
+                    }
+                }
+            }
+        }
+    }
+}

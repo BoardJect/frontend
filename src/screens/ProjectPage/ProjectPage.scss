@@ -1,0 +1,234 @@
+.proj-page{
+    // margin-left: 20%;
+    // width: 80%;
+    // height: 100vh;
+    // padding: 20px;
+    // overflow-y: scroll;
+
+    .proj-page-container{
+
+        .proj-form-full{
+            display: block;
+            text-align: center;
+
+            .proj-details-form{
+                width: 600px;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+
+                .proj-header{
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: -1.5rem;
+                    padding: 10px;
+
+                    h1{
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                }
+
+                .proj-thumb-box{
+                    margin-bottom: 2rem;
+
+                    .thumbnail-img{
+                        width: 600px;
+                        height: auto;
+                    }
+
+                    .edit-thumb-btn{
+                        margin-top: 1.2rem;
+                    }
+                }
+
+                .date-box{
+                    margin-bottom: 2rem;
+                }
+
+                .proj-mem-box{
+                    margin-bottom: 2rem;
+
+                    .proj-mem{
+                        font-size: 16px;
+                        font-weight: normal;
+                        padding: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .task-box{
+                    margin-bottom: 2rem;
+
+                    .task-container{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .task-input{
+                            width: 100%;
+
+                            .task-input-field{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                
+                .input{
+                    margin-bottom: 2rem;
+
+                    .input-field{
+                        width: 100%;
+                    }
+
+                    .auto-comp-container{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .auto-comp{
+                            width: 100%;
+                        }
+                    }
+
+                    .add-more-btn{
+                        text-transform: none;
+                        font-weight: bold;
+                    }
+                }
+
+                .form-btn{
+                    text-transform: none;
+                    margin-bottom: 2rem;
+                }
+
+                div{
+                    .task-list{
+                        margin-top: 2rem;
+
+                        .todo-tasks{
+                            .task-box{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                border-radius: 5px;
+                                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+
+                                .task-text{
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    .text{
+                                        align-self: center;
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        .completed-tasks{
+                            p{
+                                margin-top: 2rem;
+                            }
+                            
+                            .task-box{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                border-radius: 5px;
+                                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+
+                                .task-text{
+                                    display: flex;
+                                    flex-direction: row;
+                                    
+                                    .text{
+                                        align-self: center;
+                                        text-decoration: line-through;
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 830px){
+                .proj-details-form{
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .add-proj-box{
+        display: flex;
+    }
+}
+
+.proj-thumb-modal{
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    height: 60%;
+    border: 1px solid black;
+    overflow-y: scroll;
+
+    .modal-title{
+        font-weight: bolder;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .t-btn-grp{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .proj-thumb-modal{
+        width: 90%;
+        height: 70%;
+    }
+}
+
+.add-mem-modal{
+    background-color: white;
+    padding: 20px;
+    width: 40%;
+    height: 30%;
+    border: 1px solid black;
+    overflow-y: scroll;
+
+    p{
+        font-weight: bolder;
+    }
+
+    .input-field{
+        width: 100%;
+    }
+
+    .send-invite-btn{
+        text-transform: none;
+        background-color: black;
+        font-weight: bolder;
+        color: white;
+        margin-top: 1.4rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .add-mem-modal{
+        width: 90%;
+        height: 25%;
+    }
+}

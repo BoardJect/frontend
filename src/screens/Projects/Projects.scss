@@ -1,0 +1,69 @@
+.projects{
+    // margin-left: 20%;
+    // width: 80%;
+    // height: 100vh;
+    // padding: 20px;
+
+    .projects-container{
+        // overflow-y: scroll;
+        // height: 95vh;
+
+        .all-projects-box{
+
+            .col-lg-4{
+                padding: 20px;
+
+                .proj-type-header{
+                    text-align: center;
+                    padding: 2px;
+                    border-radius: 5px;
+                }
+
+                .no-status{
+                    background-color: rgba(128, 128, 128, 0.062);
+                }
+
+                .in-progress{
+                    background-color: #dcec0060
+                }
+
+                .completed{
+                    background-color: #13a00046;
+                }
+
+                .proj-add-btn{
+                    width: 100%;
+                }
+
+                .proj-cards-container{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    .add-proj-box{
+        display: block;
+        text-align: center;
+
+        .create-title{
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+    }
+}
+
+.modal-content{
+    background-color: white;
+    padding: 20px;
+    width: 70%;
+    height: 70%;
+    border: 1px solid black;
+    overflow-y: scroll
+}
+
+@media screen and (max-width: 450px){
+    .modal-content{
+        width: 90%;
+    }
+}
