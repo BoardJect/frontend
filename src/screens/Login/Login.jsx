@@ -44,6 +44,7 @@ function Login() {
                 .then((result) => {
                     result = result.data;
                     dispatch(authActions.login({userCred, userDocId, userJWT: result}));
+                    history.push("/projects")
                     setIsLoading(false);
                 })
             })
